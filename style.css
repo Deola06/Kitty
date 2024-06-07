@@ -1,0 +1,594 @@
+@font-face {
+    font-family: "cattino";
+    src: url(cattino/Cattino.ttf);
+}
+@font-face {
+    font-family: "merriweather";
+    src: url(Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+    font-family: "merriweather-bold";
+    src: url(Merriweather/Merriweather-Black.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "merriweather";
+
+} 
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "merriweather";
+    background-color: #f7f2eb;
+    width: 100%;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    margin: 0;
+    top: 0;
+    padding: 0;
+    position: sticky;
+    background-color: #d0e3ff;
+    color: #081f5c;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 7vh;
+    z-index: 1000;
+}
+
+.all{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.brand{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+} 
+.brand h1{
+    font-size:20px;
+    font-family: "cattino";
+}
+.links{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.baby-link{
+    box-sizing: border-box;
+    width: 10vw;
+    font-size: 13px;
+    font-weight: bold;
+    color: #06153d;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+section{
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+button{
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+button:hover, a:hover{
+    transform: scale(1.03);
+    box-shadow: 0.125rem 03125rem 0.375rem rgba(0, 0, 0, 0.6);
+}
+
+a{
+    text-decoration:none;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.first{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #06153d;
+}
+
+#cats{
+    height: 52vh;
+    width: auto;
+}
+
+.back{
+    box-sizing: border-box;
+    padding: 2rem;
+    box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 3px 7.5px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.first h1{
+    margin-block: 0;
+    font-family: "merriweather-bold";
+    font-size: 1.5rem
+}
+.first p{
+   font-size: 0.85rem;
+}
+
+.go{
+    padding: 12px 20px;
+    font-family: "merriweather";
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #d0e3ff;
+    color: #06153d;
+    border: none;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.second{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1vw;
+}
+
+.block{
+    box-sizing: border-box;
+    width: 30%;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    
+    background-repeat: none;
+    background-size: cover;
+    justify-content: center;
+}
+
+#one{
+    background-image: url("img/images4.jpg");
+}
+
+#two{
+    background-image: url("img/images.jpg");
+}
+
+#three{
+    background-image: url("img/images (2).jpg");
+}
+
+.what{
+    padding: 10px 15px;
+    background-color: #f7f2eb80;
+    color: #06153d;
+    border: none;
+    font-weight: bold;
+    font-family: "merriweather";
+    backdrop-filter: blur(2px);
+    font-size: 12px;
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #06153d;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+}
+
+.post h3{
+    font-family: "merriweather-bold";
+    margin-block: 0;
+    margin-bottom: 7px;
+}
+
+.post h5{
+    display: flex;
+    font-family: "merriweather";
+    margin-block: 0;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.post p{
+    font-size: 10px;
+    margin: 10px;
+}
+
+#posts{
+    width: 100%;
+}
+
+.profile{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+
+.one{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.read{
+    padding: 10px 15px;
+    background-color:#d0e3ff;
+    color: #06153d;
+    border: none;
+    font-weight: bold;
+    font-family: "merriweather";
+    font-size: 12px;
+}
+
+.intro{
+    font-size: 10px;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.ab{
+    padding: 10px 15px;
+    background-color:#d0e3ff;
+    color: #06153d;
+    border: none;
+    font-weight: bold;
+    font-family: "merriweather";
+    font-size: 8px;
+    margin: 10px 0;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.imgs{
+    width: 20px;
+}
+
+
+.newsletter {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter h2 {
+    font-size: 12px;
+    color: #06153d;
+    margin-block: 0;
+}
+
+.newsletter p{
+    font-size: 10px;
+}
+
+.newsletter form {
+    background-color: #d0e3ff;
+    border:none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter input {
+    padding: 6px;
+    text-align: center;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.226);
+    border: none;
+    font-size: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f7f2eb;
+    margin-bottom: 5px;
+}
+
+.newsletter input::placeholder {
+    font-size: 9px;
+}
+
+#btn3{
+    font-size: 10px;
+    color: #f7f2eb;
+    background-color: #06153d;
+    border: none;
+    width: 100%;
+    height: 25px;
+}
+
+.fourth, .fifth{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    min-height: 45vw;
+}
+
+.hi{
+    height: auto;
+    align-items: baseline;
+    justify-content: left;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    color: #06153d;
+}
+
+.hi h1{
+    font-size: 3rem;
+    margin-block: 0;
+}
+
+.hi p{
+    font-size: 12px;
+    margin-block: 0;
+    margin: 5px;
+}
+
+.hi a{
+    font-size: 9px;
+}
+
+#btn{
+    display: flex;
+    font-size: 12px;
+    font-family: "merriweather";
+    align-items: center;
+    justify-content: center;
+    color: #f7f2eb;
+    background-color: #06153d;
+    border: none;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 15px 25px;
+}
+.cute{
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.cute img{
+    height: auto;
+}
+
+.bro{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1vw;
+    margin: 2vh 0;
+}
+
+.sixth h2, .seventh h2, .eight h2{
+    font-size: 14px;
+    color: #06153d;
+}
+
+hr{
+   background-color: #06153d;
+}
+
+.whole {
+    width: 250px;
+    margin: 2vh 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0.226);
+}
+
+.whole img{
+    height: 150px;
+}
+
+#yup img{
+    height: auto;
+}
+
+.whole h3 {
+    font-size: 13px;
+    margin-block: 0;
+    margin: 10px 0;
+    color: #a7bddf;
+    box-sizing: border-box;
+}
+
+#yup h3{
+    margin: 10px 0 0 0;
+}
+
+#yup h5{
+    margin: 0 0 10px 0;
+}
+
+.whole h5 {
+    font-size: 10px;
+    margin-block: 0;
+    color: grey;
+    font-weight: lighter;
+}
+
+.whole P{
+    font-size: 12px;
+    color: #06153d;
+}
+
+.whole a{
+    font-size: 10px;
+}
+
+.search  {
+    position: relative;
+    display: flex;
+    width: 100%;
+	margin: 20px 0;
+    justify-content: center;
+}
+.search input{
+	border: none;
+    width: 50%;
+	outline: 0;
+    background-color: #f7f2eb;
+	padding: 10px 40px 10px 10px;
+	font-family: "merriweather";
+    font-size: 16px;
+    color: #06153d;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.226);
+}
+
+.search input::placeholder{
+    color: #243155;
+    font-size: 16px;
+}
+.abby{
+    width: 100%;
+}
+
+@media (max-width:720px) {
+    .third{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .post{
+        width: 100%;
+    }
+
+    .profile{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .one{
+        display: none;
+    }
+    
+    .block{
+        width: 100%;
+        background-repeat: none;
+        background-size: cover;
+    }
+    .first h1{
+        font-size: 3vw;
+    }
+    .first p{
+        font-size: 2vw;
+    }
+
+    .fourth, .fifth{
+        flex-direction: column;
+    }
+
+    .hi{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hi h1{
+        font-size: 6vw;
+    }
+    .hi p{
+        font-size: 2vw;
+    }
+
+    .brand h1{
+        font-size: 2.7vw;
+    }
+
+    .baby-link{
+        width: 10vw;
+        font-size: 1.3vw;
+    }
+
+    .cute img{
+        width: 55vw;
+    }
+
+    
+    .search input::placeholder{
+        font-size: 12px;
+    }
+    
+    .search input{
+        font-size: 12px;
+    }
+}
