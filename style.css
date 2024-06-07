@@ -541,7 +541,7 @@ hr {
         position: sticky;
     }
     .brand h1 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 5px;
     }
     .baby-link {
@@ -640,6 +640,20 @@ hr {
         font-size: 14px;
     }
     .whole a {
+        font-size: 12px;
+    }
+    .fourth, .fifth {
+        flex-direction: column;
+    }
+    .hi{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .hi h1{
+        font-size: 30px;
+    }
+    .search input::placeholder, .search input{
         font-size: 12px;
     }
 }
