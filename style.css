@@ -374,6 +374,7 @@ a {
 .fourth, .fifth {
     justify-content: space-between;
     display: flex;
+    height: 100vh;
     align-items: center;
 }
 
@@ -643,6 +644,7 @@ hr {
     }
     .fourth, .fifth {
         flex-direction: column;
+        height: auto;
     }
     .cute img {
         height: 250px;
