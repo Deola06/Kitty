@@ -374,7 +374,6 @@ a {
 .fourth, .fifth {
     justify-content: space-between;
     display: flex;
-    height: 100vh;
     align-items: center;
 }
 
