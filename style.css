@@ -505,7 +505,7 @@ hr {
 
 .search input {
     border: none;
-    width: 50%;
+    width: 70%;
     outline: 0;
     background-color: #f7f2eb;
     padding: 10px 40px 10px 10px;
@@ -568,7 +568,7 @@ hr {
         align-items: center;
     }
     .block {
-        width: 80%;
+        width: 90%;
         height: 200px; 
         margin-bottom: 20px;
     }
@@ -577,7 +577,7 @@ hr {
         align-items: center;
     }
     .post{   
-        width: 90%;
+        width: 100%;
     }
     .post h3 {
         font-size: 18px;
@@ -590,7 +590,7 @@ hr {
         font-size: 12px;
     }
     .profile {
-        width: 90%;
+        width: 100%;
         text-align: center;
         margin-top: 30px;
     }
@@ -620,7 +620,6 @@ hr {
         height: 20px;
     }
     .search input {
-        font-size: 14px;
         padding: 8px 30px 8px 8px;
     }
     .whole {
