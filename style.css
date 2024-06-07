@@ -644,6 +644,9 @@ hr {
     .fourth, .fifth {
         flex-direction: column;
     }
+    .cute img {
+        height: 250px;
+    }    
     .hi{
         width: 100%;
         text-align: center;
