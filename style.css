@@ -34,13 +34,13 @@ html, body {
 
 header {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color: #d0e3ff;
     color: #081f5c;
     width: 100%;
     justify-content: center;
     display: flex;
-    height: 7vh;
+    height: auto;
     z-index: 1000;
 }
 
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .brand {
     align-items: center;
+    justify-content: center;
     display: flex;
     width: 100%;
     height: 100%;
@@ -72,10 +73,13 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: space-evenly;
+    gap: 1vw;
 }
 
 .baby-link {
-    width: 10vw;
+    width: auto;
+    flex-wrap: nowrap;
     font-size: 13px;
     font-weight: bold;
     color: #06153d;
@@ -115,13 +119,13 @@ button {
 }
 
 a:hover {
-    color: #010c1b;
+    color: #000000;
     transition: color 0.3s ease;
 }
 
 button:hover {
     transform: scale(1.05);
-    box-shadow: 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -325,11 +329,12 @@ a {
 .newsletter h2 {
     font-size: 12px;
     color: #06153d;
-    margin-block: 0;
+    margin-bottom: 5px;
 }
 
 .newsletter p {
     font-size: 10px;
+    margin-bottom: 10px;
 }
 
 .newsletter form {
@@ -429,6 +434,7 @@ a {
 .sixth h2, .seventh h2, .eight h2 {
     font-size: 14px;
     color: #06153d;
+    margin-bottom: 5px;
 }
 
 hr {
@@ -527,95 +533,111 @@ hr {
 }
 
 
-
 @media (max-width: 720px) {
-    .third {
+    header {
+        height: auto;
+    }
+    .brand h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .baby-link {
+        font-size: 14px;
+    }
+    .all {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .post {
         width: 100%;
     }
-
+    .container {
+        width: 90%;
+    }
+    .first h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .first p {
+        font-size: 12px;
+    }
+    .second {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        width: 80%;
+        height: 200px; 
+        margin-bottom: 20px;
+    }
+    .third {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post h3 {
+        font-size: 18px;
+    }
+    .post h5 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .post p {
+        font-size: 12px;
+    }
     .profile {
-        flex-direction: row;
-        width: 100%;
+        width: 80%;
+        text-align: center;
+        margin-top: 30px;
     }
-
-    .one {
+    .profile .one {
         display: none;
     }
-
-    .block {
-        width: 100%;
-        background-size: cover;
+    .newsletter h2 {
+        font-size: 14px;
     }
-
-    .first h1 {
-        font-size: 3vw;
-    }
-
-    .first p {
-        font-size: 2vw;
-    }
-
-    .fourth, .fifth {
-        flex-direction: column;
-    }
-
-    .hi {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hi h1 {
-        font-size: 6vw;
-    }
-
-    .hi p {
-        font-size: 2vw;
-    }
-
-    .brand h1 {
-        font-size: 2.7vw;
-    }
-
-    .baby-link {
-        width: 10vw;
-        font-size: 1.3vw;
-    }
-
-    .cute img {
-        width: 55vw;
-    }
-
-    .search input::placeholder {
+    .newsletter p {
         font-size: 12px;
     }
-
+    .newsletter input {
+        font-size: 12px;
+        padding: 8px;
+    }
+    #btn3 {
+        font-size: 12px;
+        height: 35px; 
+    }
+    .logo {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .imgs {
+        width: 20px;
+        height: 20px;
+    }
     .search input {
+        font-size: 14px;
+        padding: 8px 30px 8px 8px;
+    }
+    .whole {
+        width: 90%;
+    }
+    .whole img {
+        width: 100%;
+        height: auto;
+    }
+    .whole h3 {
+        font-size: 16px;
+    }
+    .whole h5 {
         font-size: 12px;
     }
-
-    .all {
-        width: 90%;
-        justify-content: space-between;
+    .whole p {
+        font-size: 14px;
     }
-
-    .brand {
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .links {
-        width: 100%;
-        height: 100%;
+    .whole a {
+        font-size: 12px;
     }
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;
